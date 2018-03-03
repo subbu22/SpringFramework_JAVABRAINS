@@ -36,7 +36,7 @@
     
     //comment any two Point objects.....
     <bean class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor"/>
-<<<<<<< HEAD
+
     </beans> -->
     
     
@@ -77,6 +77,6 @@
     <!-- <bean class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor"/> -->
     <context:annotation-config/>
     </beans>
-=======
-    </beans> -->
+
+    </beans> 
 
