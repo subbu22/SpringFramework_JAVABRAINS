@@ -25,6 +25,8 @@
     </bean>
     
      <bean id="Circle" class="org.kishan.Circle">
-         <property name="center" ref="PointA"/>
-     </bean>
+<!--    <property name="center" ref="PointA"/> --> 
+	</bean>
+	
+	<bean class="org.springframework.beans.factory.annotation.RequiredAnnotationBeanPostProcessor"/>
 </beans>
