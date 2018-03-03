@@ -1,34 +1,78 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<beans xmlns = "http://www.springframework.org/schema/beans"
+
+<!-- <beans xmlns = "http://www.springframework.org/schema/beans"
    xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
    xsi:schemaLocation = "http://www.springframework.org/schema/beans
    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+   
+   //Traingle Bean shuld be commented
+    <bean id="Triangle" class="org.kishan.Triangle">
+        <property name="pointa" ref="PointA"/>
+        <property name="pointb" ref="PointB"/>
+        <property name="pointc" ref="PointC"/>   
+    </bean>
+    
+    <bean id="PointA" class="org.kishan.Point">
+        <property name="x" value="0"/>
+        <property name="y" value="0"/>
+    </bean>
+    
+    <bean id="PointB" class="org.kishan.Point">
+        <property name="x" value="20"/>
+        <property name="y" value="0"/>
+    </bean>
+    
+    <bean id="PointC" class="org.kishan.Point">
+        <property name="x" value="0"/>
+        <property name="y" value="20"/>
+    </bean>
+    
+    <bean id="Circle" class="org.kishan.Circle">
+      	<property name="center" ref="PointC"/>
+    </bean>
+    
+    //@Required Annotation
+    <bean class="org.springframework.beans.factory.annotation.RequiredAnnotationBeanPostProcessor"/>
+    
+    //comment any two Point objects.....
+    <bean class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor"/>
+    </beans> -->
+    
+    
+    
+  <beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"
+	xmlns:context="http://www.springframework.org/schema/context">
+ 
     <!-- <bean id="Triangle" class="org.kishan.Triangle">
         <property name="pointa" ref="PointA"/>
         <property name="pointb" ref="PointB"/>
         <property name="pointc" ref="PointC"/>   
     </bean> -->
     
-    <!-- <bean id="PointA" class="org.kishan.Point">
+    <bean id="PointA" class="org.kishan.Point">
+        <qualifier value="circleRelated"/>
         <property name="x" value="0"/>
         <property name="y" value="0"/>
-    </bean> -->
+    </bean>
     
-    <bean id="PointB" class="org.kishan.Point">
+   <bean id="PointB" class="org.kishan.Point">
         <property name="x" value="20"/>
         <property name="y" value="0"/>
     </bean>
-   <!--  
+    
+ 
     <bean id="PointC" class="org.kishan.Point">
         <property name="x" value="0"/>
         <property name="y" value="20"/>
-    </bean> -->
+    </bean> 
     
     <bean id="Circle" class="org.kishan.Circle">
-      	<!-- <property name="center" ref="PointC"/> -->
+
     </bean>
     
-    <!-- <bean class="org.springframework.beans.factory.annotation.RequiredAnnotationBeanPostProcessor"/> -->
-    
-    <bean class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor"/>
+    <!-- <bean class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor"/> -->
+    <context:annotation-config/>
     </beans>
