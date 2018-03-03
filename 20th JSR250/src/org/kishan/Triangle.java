@@ -9,6 +9,7 @@ public Point getPointa() {
 }
 public void setPointa(Point pointa) {
 	this.pointa = pointa;
+
 }
 public Point getPointb() {
 	return pointb;

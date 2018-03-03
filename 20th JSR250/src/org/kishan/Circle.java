@@ -10,17 +10,22 @@ public class Circle implements Shape{
 	public Point getCenter() {
 		return center;
 	}
-	@Resource(name="PointC")
+	/*@Resource(name="PointC")
+	public void setCenter(Point center) {
+		this.center = center;
+	}*/
+	
+	@Resource
 	public void setCenter(Point center) {
 		this.center = center;
 	}
-	
 	public void draw()
 	{
 		System.out.println("Circle Drawing");
 		System.out.println("Circle : "+center.getX() + "," + center.getY());
 	}
-	/*@PostConstruct
+	
+	@PostConstruct
 	public void initialise()
 	{
 		System.out.println("Init of circle");
@@ -29,5 +34,5 @@ public class Circle implements Shape{
 	public void destroy()
 	{
 		System.out.println("destroy of circle");
-	}*/
+	}
 }
