@@ -5,11 +5,11 @@
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"
 	xmlns:context="http://www.springframework.org/schema/context">
  
-    <!-- <bean id="Triangle" class="org.kishan22.Triangle">
+    <bean id="Triangle" class="org.kishan22.Triangle">
         <property name="pointa" ref="PointA"/>
         <property name="pointb" ref="PointB"/>
         <property name="pointc" ref="PointC"/>   
-    </bean>  -->
+    </bean> 
     
     <bean id="PointA" class="org.kishan22.Point">
         <qualifier value="circleRelated"/>
