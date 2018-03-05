@@ -36,7 +36,11 @@ public class Circle implements Shape{
 	public void draw()
 	{
 		System.out.println(this.msg.getMessage("Circle_Msg",null,"Default Greeting",null));
-		System.out.println("Circle : "+center.getX() + "," + center.getY());
+		System.out.println("Circle Point from XML file: "+center.getX() + "," + center.getY());
+		//above reads from xml file
+		
+		//below line gets the value from properties file
+		System.out.println("Circle Point from Properties file : "+this.msg.getMessage("Drawing_Point",new Object[] {center.getX(),center.getY()},"Default Point message",null));
 		System.out.println(this.msg.getMessage("greeting",null,"Default Greeting",null));
 	}
 	
