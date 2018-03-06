@@ -9,7 +9,8 @@ import org.springframework.stereotype.Repository;
 
 
 @Repository
-public class Circle23 implements Shape23{
+public class Circle23 implements Shape23
+{
 	private Point23 center;
 	@Autowired
 	private MessageSource msg;

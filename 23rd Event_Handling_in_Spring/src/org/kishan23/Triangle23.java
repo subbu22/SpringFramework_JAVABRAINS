@@ -5,7 +5,8 @@ import org.kishan23.Shape23;
 
 public class Triangle23 implements Shape23{
 private Point23 pointa;
-private Point23 pointb;
+private Point23 pointb;;
+
 private Point23 pointc;
 public Point23 getPointa() {
 	return pointa;

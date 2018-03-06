@@ -1,4 +1,4 @@
-package org.kishan23;
+package org.kishan23
 
 public class Point23 {
 	private int x;
