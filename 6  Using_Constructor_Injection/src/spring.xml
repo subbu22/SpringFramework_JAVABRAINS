@@ -7,6 +7,6 @@
 
     <bean id="triangle" class="org.kishan.Triangle">
     <property name="type" value="Equi"/>
-    <constructor-arg value="Scalene">
+    <constructor-arg value="Scalene"/>
     </bean>
 </beans>

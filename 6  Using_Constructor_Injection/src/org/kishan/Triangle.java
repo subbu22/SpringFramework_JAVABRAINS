@@ -19,7 +19,7 @@ public void setType(String type) {
 }
 
 	public void draw() {
-		System.out.println(getType()+"trinagle Drawn");
+		System.out.println(getType()+"trinagle Drawn" +type);
 	}
 
 }
