@@ -7,21 +7,26 @@
 
     <bean id="triangle" class="org.kishan.Triangle">
         	<property name="pointa" ref="PointA"/>
-            <property name="pointb" ref="PointB"/>
-            <property name="pointc" ref="PointC"/>      
-    </bean>
-    <bean id="PointA" class="org.kishan.Point">
-        <property name="x" value="0"/>
-        <property name="y" value="0"/>
-    </bean>
+        	
+            <property name="pointb">
+                <bean class="org.kishan.Point">
+        			<property name="x" value="20"/>
+        			<property name="y" value="0"/>
+    			</bean>
+            </property>
+            
+            <property name="pointc" ref="PointC">  
+    			<bean id="PointC" class="org.kishan.Point">
+       			<property name="x" value="0"/>
+        		<property name="y" value="20"/>
+    			</bean>
+            </property>
+      </bean>
+      
     
-    <bean id="PointB" class="org.kishan.Point">
-        <property name="x" value="20"/>
-        <property name="y" value="0"/>
-    </bean>
-    
-    <bean id="PointC" class="org.kishan.Point">
-        <property name="x" value="0"/>
-        <property name="y" value="20"/>
-    </bean>
+        <bean id="PointA" class="org.kishan.Point">
+        	<property name="x" value="0"/>
+        	<property name="y" value="0"/>
+    	</bean>
+    	
 </beans>

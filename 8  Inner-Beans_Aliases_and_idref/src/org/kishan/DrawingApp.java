@@ -12,5 +12,4 @@ public class DrawingApp
 		triangle.draw();
 		System.out.println("Exit from main");
 	}
-
 }
