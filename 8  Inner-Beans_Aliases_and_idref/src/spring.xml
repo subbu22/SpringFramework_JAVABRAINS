@@ -6,7 +6,9 @@
    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
     <bean id="triangle" class="org.kishan.Triangle">
-        	<property name="pointa" ref="PointA"/>
+        	<property name="pointa">
+				<idref pointa="PointA"/>
+        	</property>
         	
             <property name="pointb">
                 <bean class="org.kishan.Point">
@@ -15,8 +17,8 @@
     			</bean>
             </property>
             
-            <property name="pointc" ref="PointC">  
-    			<bean id="PointC" class="org.kishan.Point">
+            <property name="pointc">  
+    			<bean class="org.kishan.Point">
        			<property name="x" value="0"/>
         		<property name="y" value="20"/>
     			</bean>
@@ -29,4 +31,5 @@
         	<property name="y" value="0"/>
     	</bean>
     	
+        <alias name="triangle" alias="triangle-alias"/>
 </beans>
