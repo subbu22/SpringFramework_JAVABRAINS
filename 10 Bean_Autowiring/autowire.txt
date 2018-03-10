@@ -1,3 +1,4 @@
+autowire="byType"
 steps : 
 1) 
 ApplicationContext context= new ClassPathXmlApplicationContext("spring.xml");  //keeps ready with all the beans available in config file
@@ -14,3 +15,8 @@ i.e :  <bean id="triangle" class="org.kishan.Triangle" autowire="byName">
   		//if no such dependencies the goes to Triangle.java and searches for 3 bean name specified in spring.xml file
   		
   		it finds bean with "pointa,pointb,pointc" and automatically refer these bean to those member variable and it automatically autowires them
+  		
+  		
+autowire="byName" and "constructor"
+they return only one bean per reqest if multiple reference then it throws exception "exception : expected pointa but found pointa,pointb,pointc;
+they both are similar and return on bean at a time  		
