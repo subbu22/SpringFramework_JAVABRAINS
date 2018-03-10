@@ -4,7 +4,7 @@ import java.util.List;
 
 public class Triangle
 {
-	/*private Point pointa;
+	private Point pointa;
 	private Point pointb;
 	private Point pointc;
 
@@ -38,27 +38,12 @@ public class Triangle
 	{
 		this.pointc = pointc;
 	}
-*/
 	
-	private List<Point> points;
-	
-	
-	public List<Point> getPoints() {
-		return points;
-	}
-
-
-	public void setPoints(List<Point> points) {
-		this.points = points;
-	}
-
-
 	public void draw()
 	{
 		System.out.println("Triangle draw");
-		for(Point point:points)
-		{
-			System.out.println(" PointA : "+"(" +point.getX() +","+ point.getY() + ")");
-		}
+		System.out.println(" PointA : "+"(" +pointa.getX() +","+ pointa.getY() + ")");
+		System.out.println(" PointB : "+"(" +pointb.getX() +","+ pointb.getY() + ")");
+		System.out.println(" PointC : "+"(" +pointc.getX() +","+ pointc.getY() + ")");
 	}
 }

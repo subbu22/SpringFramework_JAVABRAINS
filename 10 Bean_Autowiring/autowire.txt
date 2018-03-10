@@ -1,0 +1,16 @@
+steps : 
+1) 
+ApplicationContext context= new ClassPathXmlApplicationContext("spring.xml");  //keeps ready with all the beans available in config file
+Triangle triangle = (Triangle) context.getBean("triangle"); //goes to .xml file and searches for id="triangle" and see's autowire="byName"
+
+2)
+after seeing autowire="byName" and searches for any dependencies in the <bean>....</bean>
+i.e :  <bean id="triangle" class="org.kishan.Triangle" autowire="byName">
+  		.
+  		.
+  		.
+  		</bean>
+  		
+  		//if no such dependencies the goes to Triangle.java and searches for 3 bean name specified in spring.xml file
+  		
+  		it finds bean with "pointa,pointb,pointc" and automatically refer these bean to those member variable and it automatically autowires them
