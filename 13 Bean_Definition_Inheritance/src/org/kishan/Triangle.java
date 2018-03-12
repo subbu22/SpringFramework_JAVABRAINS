@@ -1,13 +1,15 @@
 package org.kishan;
 
 
+import java.util.List;
+
 import org.springframework.context.ApplicationContext;
 
 /*public class Triangle implements ApplicationContextAware, BeanNameAware
 */
 public class Triangle
 {
-	private Point pointa;
+	/*private Point pointa;
 	private Point pointb;
 	private Point pointc;
 	private ApplicationContext context;
@@ -50,7 +52,7 @@ public class Triangle
 		System.out.println(" PointB : "+"(" +pointb.getX() +","+ pointb.getY() + ")");
 		System.out.println(" PointC : "+"(" +pointc.getX() +","+ pointc.getY() + ")");
 	}
-
+*/
 	/*@Override
 	public void setApplicationContext(ApplicationContext context) throws BeansException {
 		this.context=context;
@@ -61,4 +63,28 @@ public class Triangle
 	public void setBeanName(String beanName) {
 System.out.println("bean name is  : "+beanName);		
 	}*/
+	
+	
+	
+private List<Point> points;
+	
+	
+	public List<Point> getPoints() {
+		return points;
+	}
+
+
+	public void setPoints(List<Point> points) {
+		this.points = points;
+	}
+
+
+	public void draw()
+	{
+		System.out.println("Triangle draw");
+		for(Point point:points)
+		{
+			System.out.println(" PointA : "+"(" +point.getX() +","+ point.getY() + ")");
+		}
+	}
 }
