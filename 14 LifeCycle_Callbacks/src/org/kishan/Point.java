@@ -1,4 +1,5 @@
 package org.kishan;
+
 public class Point 
 {
 	private int x;

@@ -1,0 +1,13 @@
+Initialising Bean Init Method called
+Init method
+Triangle draw
+ PointA : (0,0)
+ PointB : (20,0)
+ PointC : (0,20)
+Disposable Bean Method called
+Destroy Method
+
+
+first the spring specified bean afterPropertiesSet() (method) is called then user-defined myInit() method is called
+
+during end of life-cycle : first the spring specified bean destroy() (method) is called then user-defined destroyMethod() method is called

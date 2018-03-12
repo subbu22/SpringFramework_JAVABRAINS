@@ -4,9 +4,8 @@ import org.springframework.beans.factory.DisposableBean;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.context.ApplicationContext;
 
-//public class Triangle implements InitializingBean, DisposableBean
-public class Triangle
-
+public class Triangle implements InitializingBean, DisposableBean
+//public class Triangle
 {
 	private Point pointa; 
 	private Point pointb;
@@ -51,7 +50,7 @@ public class Triangle
 		System.out.println(" PointB : "+"(" +pointb.getX() +","+ pointb.getY() + ")");
 		System.out.println(" PointC : "+"(" +pointc.getX() +","+ pointc.getY() + ")");
 	}
-/*
+
 	@Override
 	public void afterPropertiesSet() throws Exception {
 		System.out.println("Initialising Bean Init Method called");
@@ -61,7 +60,7 @@ public class Triangle
 	@Override
 	public void destroy() throws Exception {
 		System.out.println("Disposable Bean Method called");		
-	}*/
+	}
 
 	/*@Override
 	public void setApplicationContext(ApplicationContext context) throws BeansException {
