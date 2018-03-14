@@ -12,8 +12,8 @@
     </bean>
     
     <bean id="PointA" class="org.kishan.Point">
-        <property name="x" value="0"/>
-        <property name="y" value="0"/>
+        <property name="x" value="${pointA.x}"/>
+        <property name="y" value="${pointa.y}"/>
     </bean>
     
     <bean id="PointB" class="org.kishan.Point">
@@ -26,7 +26,9 @@
         <property name="y" value="20"/>
     </bean>
     
-    <bean class="org.kishan.BeanfactoryPP"/>
-    
+   <!--  <bean class="org.kishan.BeanFactoryPP"/> -->
+    <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="locations" value="classpath:pointscofig.properties"/>
+    </bean>
 </beans>
  

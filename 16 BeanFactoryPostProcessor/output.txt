@@ -1,0 +1,13 @@
+Mar 14, 2018 3:09:17 PM org.springframework.context.support.AbstractApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@70177ecd: display name [org.springframework.context.support.ClassPathXmlApplicationContext@70177ecd]; startup date [Wed Mar 14 15:09:17 IST 2018]; root of context hierarchy
+Mar 14, 2018 3:09:17 PM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+INFO: Loading XML bean definitions from class path resource [spring.xml]
+Mar 14, 2018 3:09:17 PM org.springframework.context.support.AbstractApplicationContext obtainFreshBeanFactory
+INFO: Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@70177ecd]: org.springframework.beans.factory.support.DefaultListableBeanFactory@2437c6dc
+Bean Factory PostProcessor is called
+Mar 14, 2018 3:09:18 PM org.springframework.beans.factory.support.DefaultListableBeanFactory preInstantiateSingletons
+INFO: Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@2437c6dc: defining beans [triangle,PointA,PointB,PointC,org.kishan.BeanFactoryPP#0]; root of factory hierarchy
+Triangle draw
+ PointA : (0,0)
+ PointB : (20,0)
+ PointC : (0,20)

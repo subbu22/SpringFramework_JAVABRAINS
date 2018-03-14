@@ -7,7 +7,7 @@ import org.springframework.beans.factory.config.ConfigurableListableBeanFactory;
 public class BeanFactoryPP implements BeanFactoryPostProcessor {
 	@Override
 	public void postProcessBeanFactory(ConfigurableListableBeanFactory beanFactory) throws BeansException {
-		System.out.println("Bean Factory PostProcessor"+beanFactory);
+		System.out.println("Bean Factory PostProcessor is called"/*beanFactory*/);
 		
 	}
 
