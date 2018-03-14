@@ -1,0 +1,23 @@
+package org.kishan;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.AbstractApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class DrawingApp {
+	public static void main(String args[])
+	{
+		/*ApplicationContext context=new ClassPathXmlApplicationContext("spring.xml");
+		Shape shape=(Shape) context.getBean("Circle");
+		shape.draw();*/
+		
+		//if we dont use context AbstractApplicationContext for destroying of bean then destroy method from circle class wont be executed
+		//so we use AbstractApplicationContext(registerShutdownHook();) for closing the bean
+		
+		/*AbstractApplicationContext context=new ClassPathXmlApplicationContext("spring.xml");
+		context.registerShutdownHook();
+		Shape shape=(Shape) context.getBean("Circle");
+		shape.draw();*/
+	}
+
+}
